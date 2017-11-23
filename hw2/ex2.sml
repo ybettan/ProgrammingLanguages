@@ -39,14 +39,10 @@ end;
 
   
 (* q4 *)
-
+fun sig1 a b f = f(a, f(a, b));
 fun sig2 (n, r) f = (n=0 andalso round(r)=0 andalso (f(r)="I Love Drugs"));
-
 fun sig3 f a b c = f a b;
-
 fun sig4 a b c d = c*d;
-					
 fun sig5 f a g = g(f(a), f(a));
-
 fun sig6 () = fn () => 1;
 
