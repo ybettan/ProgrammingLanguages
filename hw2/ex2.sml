@@ -1,4 +1,4 @@
-(* name, ids etc...*)
+(* Alon Kwart 201025228 kwart@campus.technion.ac.il *)
 
 
 (* q1 *)
@@ -36,9 +36,19 @@ fun balance (s:string) = let
     helper(s, 0, 0, 0)
   end;
 
+  
+(* q4.2 int * real -> (real -> string) -> bool *)
+fun sig2( n : int, r : real) =
+			fn ( rr : real -> string) => true;
 
-
-
-
+(* q4.4 'a -> 'b -> int -> int -> int *)
+fun sig4( a : 'a) =
+			fn( b : 'b ) => 
+				fn( n : int)  =>
+					fn( nn : int ) => nn;
+					
+(* q4.6 unit -> unit -> int *)
+fun sig6 () = 
+		fn () => 1;
 
 
