@@ -39,20 +39,12 @@ end;
 
   
 (* q4 *)
-fun sig1 (x1:'a) =
-  fn x2:'b => 
-    fn (f:('a*'b->'b)) => 
-      f(x1, x2);
 
-fun sig2( n : int, r : real) =
-			fn ( rr : real -> string) => true;
+fun sig22 (n, r) f = (n=0 andalso round(r)=0 andalso (f(r)="I Love Drugs"));
 
 fun sig3 f a b c = f a b;
 
-fun sig4( a : 'a) =
-			fn( b : 'b ) => 
-				fn( n : int)  =>
-					fn( nn : int ) => nn;
+fun sig4 a b c d = c*d;
 					
 fun sig5 f a g = g(f(a), f(a));
 
